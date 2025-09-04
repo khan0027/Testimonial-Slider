@@ -8,23 +8,19 @@ const Card = (props) => {
   const review = props.review;
 
   return (
-    <div className='flex flex-col justify-center w-[500px] h-[60vh] relative items-center bg-white rounded-md m-5 shadow-md ' >
+    <div className='flex flex-col justify-center w-[500px] h-[60vh] relative items-center m-5 ' >
         <div className='rounded-full bg-violet-500 absolute top-[-50px] left-[20px]  ' ><img src={review.image} alt="" className='h-30 relative top-1 right-2 rounded-full w-30' /></div>
-        <div className='text-2xl font-bold' >
+        <div className='text-2xl font-bold mt-5  ' >
             <h1 className='capitalize' >{review.name}</h1>
         </div>
-        <div className='text-gray-400 text-sm mt-1 mb-1' >
+        <div className='text-gray-400 text-sm mt-1 ' >
             <h4 className='uppercase' >{review.job}</h4>
         </div>
-        <div className='mt-2' >
+        <div className=' flex flex-col justify-center items-center mt-15' >
           <FaQuoteLeft color='purple  ' size={20} />
-        </div>
-        <div className='m-5' >
-          <p>
+          <p className='mt-4 mb-4 p-5 ' >
             {review.text}
           </p>
-        </div>
-        <div className='mb-2' >
           <FaQuoteRight color='purple' size={20} />
         </div>
         
